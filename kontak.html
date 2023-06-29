@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resep Dapur</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="assets/gambar/logo.png" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="topnav">
+      <img class="logo" src="assets/gambar/logo.png" alt="logo" />
+      <h2 class="nama-logo">Resep Dapur</h2>
+      <form>
+        <input class="search-navbar" type="text" placeholder="Cari..." />
+      </form>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="resep.html">Resep</a>
+          <ul class="dropdown">
+            <li><a href="resep_ayam.html">Ayam</a></li>
+            <li><a href="resep_daging.html">Daging</a></li>
+            <li><a href="resep_ikan.html">Ikan</a></li>
+            <li><a href="resep_kue.html">Kue</a></li>
+            <li><a href="resep_sayur.html">Sayur</a></li>
+          </ul>
+        </li>
+        <li><a href="tips.html">Tips & Trick</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <!-- selesai navbar -->
+    <div class="header" style="background-image: url(assets/gambar/Customer-Service.png)">
+      <h1 class="judul">Kontak</h1>
+    </div>
+    <div class="row">
+      <div class="col-text-kontak">
+        <div class="container">
+          <h1>Kontak Saya</h1>
+          <h3>Silahkan tinggalkan pesan anda pada kolom yang telah disediakan</h3>
+        </div>
+      </div>
+      <div class="col-input-kontak">
+        <form action="#" method="post">
+          <label><h3 class="label-kontak">Nama Anda :</h3></label>
+          <input class="input-form" type="text" name="nama" placeholder="Masukan Nama" required />
+          <label><h3 class="label-kontak">Email Anda :</h3></label>
+          <input class="input-form" type="email" name="nama" placeholder="Masukan Email" required />
+          <label><h3 class="label-kontak">Pesan Anda :</h3></label>
+          <textarea name="pesan" rows="10" cols="53" style="margin-bottom: 15px"></textarea>
+          <input class="btn-kontak" type="submit" value="Kirim" />
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <img class="logoC" src="assets/gambar/copyright.png" alt="" />
+      <span class="namaC"
+        >Copyright By Muhammad <br />
+        Fattaah Al Rasyidin</span
+      >
+      <a href="#"><img class="logoSosmed" src="twitter.png" alt="" /></a>
+      <a href="#"><img class="logoSosmed" src="instagram.png" alt="" /></a>
+      <a href="#"><img class="logoSosmed" src="facebook.png" alt="" /></a>
+    </div>
+  </body>
+</html>

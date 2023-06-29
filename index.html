@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resep Dapur</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css" />
+    <link rel="icon" href="assets/gambar/logo.png" />
+    <script src="btn-like.js"></script>
+    <script type="text/javascript">
+      var count = 1;
+      setInterval(function () {
+        document.getElementById("radio" + count).checked = true;
+        count++;
+        if (count > 4) {
+          count = 1;
+        }
+      }, 3000);
+    </script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="topnav">
+      <img class="logo" src="assets/gambar/logo.png" alt="logo" />
+      <h2 class="nama-logo">Resep Dapur</h2>
+      <form>
+        <input class="search-navbar" type="text" placeholder="Cari..." />
+      </form>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="resep.html">Resep</a>
+          <ul class="dropdown">
+            <li><a href="resep_ayam.html">Ayam</a></li>
+            <li><a href="resep_daging.html">Daging</a></li>
+            <li><a href="resep_ikan.html">Ikan</a></li>
+            <li><a href="resep_kue.html">Kue</a></li>
+            <li><a href="resep_sayur.html">Sayur</a></li>
+          </ul>
+        </li>
+        <li><a href="tips.html">Tips & Trick</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <!-- selesai navbar -->
+    <div class="col-slider">
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+
+          <div class="slide first">
+            <img src="assets/gambar/resep14.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/gambar/resep13.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/gambar/resep29.jpg" alt="" />
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Resep Populer</h1>
+      <hr width="90%" />
+      <div class="row">
+        <div class="card-resepH">
+          <img class="gambar-resep" src="assets/gambar/resep1.jpg" alt="" /><br />
+          <a href="ayam_tangkap.html" class="judul-resep">Ayam Tangkap</a>
+          <hr />
+          <button class="icon-btn" onclick="jmlResep1()">
+            <i class="fa-solid fa-heart fa-xl"></i>
+          </button>
+          <span class="like-home" id="like1"> 150</span>
+          <i class="fa-solid fa-calendar-days fa-xl icon-tanggal"></i>
+          <span class="tanggal"> 29-5-2022</span>
+        </div>
+        <div class="card-resepH">
+          <img class="gambar-resep" src="assets/gambar/resep2.jpg" alt="" /><br />
+          <a href="kulit_ayam.html" class="judul-resep">Kulit Ayam Pedas</a>
+          <hr />
+          <button class="icon-btn" onclick="jmlResep2()">
+            <i class="fa-solid fa-heart fa-xl"></i>
+          </button>
+          <span class="like-home" id="like2"> 100</span>
+          <i class="fa-solid fa-calendar-days fa-xl icon-tanggal"></i>
+          <span class="tanggal"> 29-4-2022</span>
+        </div>
+        <div class="card-resepH">
+          <img class="gambar-resep" src="assets/gambar/resep4.jpg" alt="" /><br />
+          <a href="pepes_ikan.html" class="judul-resep">Pepes Ikan Mas</a>
+          <hr />
+          <button class="icon-btn" onclick="jmlResep4()">
+            <i class="fa-solid fa-heart fa-xl"></i>
+          </button>
+          <span class="like-home" id="like4"> 90</span>
+          <i class="fa-solid fa-calendar-days fa-xl icon-tanggal"></i>
+          <span class="tanggal"> 29-5-2022</span>
+        </div>
+        <div class="card-resepH">
+          <img class="gambar-resep" src="assets/gambar/resep5.jpg" alt="" /><br />
+          <a href="pie_susu.html" class="judul-resep">Pie Susu</a>
+          <hr />
+          <button class="icon-btn" onclick="jmlResep5()">
+            <i class="fa-solid fa-heart fa-xl"></i>
+          </button>
+          <span class="like-home" id="like5"> 88</span>
+          <i class="fa-solid fa-calendar-days fa-xl icon-tanggal"></i>
+          <span class="tanggal"> 29-5-2022</span>
+        </div>
+        <div class="card-resepH">
+          <img class="gambar-resep" src="assets/gambar/resep7.jpg" alt="" /><br />
+          <a href="jengkol_balado.html" class="judul-resep">Jengkol Balado Pedas</a>
+          <hr />
+          <button class="icon-btn" onclick="jmlResep7()">
+            <i class="fa-solid fa-heart fa-xl"></i>
+          </button>
+          <span class="like-home" id="like7"> 110</span>
+          <i class="fa-solid fa-calendar-days fa-xl icon-tanggal"></i>
+          <span class="tanggal"> 30-5-2022</span>
+        </div>
+        <div class="card-resepH">
+          <img class="gambar-resep" src="assets/gambar/resep14.jpg" alt="" /><br />
+          <a href="ayam_krispi.html" class="judul-resep">Ayam Goreng Krispi</a>
+          <hr />
+          <button class="icon-btn" onclick="jmlResep14()">
+            <i class="fa-solid fa-heart fa-xl"></i>
+          </button>
+          <span class="like-home" id="like14"> 85</span>
+          <i class="fa-solid fa-calendar-days fa-xl icon-tanggal"></i>
+          <span class="tanggal"> 31-5-2022</span>
+        </div>
+        <div class="card-resepH">
+          <img class="gambar-resep" src="assets/gambar/resep3.jpg" alt="" /><br />
+          <a href="soto_daging.html" class="judul-resep">Soto Daging</a>
+          <hr />
+          <button class="icon-btn" onclick="jmlResep3()">
+            <i class="fa-solid fa-heart fa-xl"></i>
+          </button>
+          <span class="like-home" id="like3"> 83</span>
+          <i class="fa-solid fa-calendar-days fa-xl icon-tanggal"></i>
+          <span class="tanggal"> 29-5-2022</span>
+        </div>
+        <div class="card-resepH">
+          <img class="gambar-resep" src="assets/gambar/resep24.jpg" alt="" /><br />
+          <a href="tuna_woku.html" class="judul-resep">Tuna Bumbu Woku</a>
+          <hr />
+          <button class="icon-btn" onclick="jmlResep24()">
+            <i class="fa-solid fa-heart fa-xl"></i>
+          </button>
+          <span class="like-home" id="like24"> 80</span>
+          <i class="fa-solid fa-calendar-days fa-xl icon-tanggal"></i>
+          <span class="tanggal"> 29-5-2022</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="column-quotes">
+          <p>
+            <span style="font-size: 3em">" </span>
+            Memasak tidak akan pernah baik jika tidak terbuat dari cinta untuk orang yang diperuntukkannya masakan tersebut. – Paul Bocuse
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Resep Terbaru</h1>
+      <hr width="90%" />
+      <div class="row">
+        <div class="card-resepH">
+          <img class="gambar-resep" src="assets/gambar/resep20.jpg" alt="" /><br />
+          <a href="daging_bumbu_rempah.html" class="judul-resep">Daging Bumbu Rempah</a>
+          <hr />
+          <button class="icon-btn" onclick="jmlResep20()">
+            <i class="fa-solid fa-heart fa-xl"></i>
+          </button>
+          <span class="like-home" id="like20"> 19</span>
+          <i class="fa-solid fa-calendar-days fa-xl icon-tanggal"></i>
+          <span class="tanggal"> 01-06-2022</span>
+        </div>
+        <div class="card-resepH">
+          <img class="gambar-resep" src="assets/gambar/resep19.jpg" alt="" /><br />
+          <a href="daging_masak_santan.html" class="judul-resep">Daging Masak Santan</a>
+          <hr />
+          <button class="icon-btn" onclick="jmlResep19()">
+            <i class="fa-solid fa-heart fa-xl"></i>
+          </button>
+          <span class="like-home" id="like19"> 22</span>
+          <i class="fa-solid fa-calendar-days fa-xl icon-tanggal"></i>
+          <span class="tanggal"> 01-06-2022</span>
+        </div>
+        <div class="card-resepH">
+          <img class="gambar-resep" src="assets/gambar/resep22.jpg" alt="" /><br />
+          <a href="pindang_bandeng.html" class="judul-resep">Pindang Bandeng</a>
+          <hr />
+          <button class="icon-btn" onclick="jmlResep22()">
+            <i class="fa-solid fa-heart fa-xl"></i>
+          </button>
+          <span class="like-home" id="like22"> 31</span>
+          <i class="fa-solid fa-calendar-days fa-xl icon-tanggal"></i>
+          <span class="tanggal"> 01-06-2022</span>
+        </div>
+        <div class="card-resepH">
+          <img class="gambar-resep" src="assets/gambar/resep29.jpg" alt="" /><br />
+          <a href="cake_paradise.html" class="judul-resep">Cake Paradise</a>
+          <hr />
+          <button class="icon-btn" onclick="jmlResep29()">
+            <i class="fa-solid fa-heart fa-xl"></i>
+          </button>
+          <span class="like-home" id="like29"> 24</span>
+          <i class="fa-solid fa-calendar-days fa-xl icon-tanggal"></i>
+          <span class="tanggal"> 01-06-2022</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Tips & Trick</h1>
+      <hr width="90%" />
+      <div class="row">
+        <div class="column-tips">
+          <img class="gambar-tipsH" src="assets/gambar/tips1.jpg" alt="" />
+          <h4 style="margin: 5px">3 CARA SUKSES KUKUS DIM SUM</h4>
+          <p class="desc-TipsH">Dim sum biasanya disajikan selagi panas di dalam...</p>
+          <a class="btn-lihat" href="tips1.html">Lihat Tips & Trick</a>
+        </div>
+        <div class="column-tips">
+          <img class="gambar-tipsH" src="assets/gambar/tips6.jpg" alt="" />
+          <h4 style="margin: 5px">3 TRIK MEMILIH SAYURAN SEGAR</h4>
+          <p class="desc-TipsH">Kesegaran sayuran sangat memengaruhi kelezatan sebuah...</p>
+          <a class="btn-lihat" href="tips6.html">Lihat Tips & Trick</a>
+        </div>
+        <div class="column-tips">
+          <img class="gambar-tipsH" src="assets/gambar/tips5.jpg" alt="" />
+          <h4 style="margin: 5px">2 TEKNIK MENGUKUS</h4>
+          <p class="desc-TipsH">Mengukus termasuk metode memasak menggunakan...</p>
+          <a class="btn-lihat" href="tips5.html">Lihat Tips & Trick</a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <img class="logoC" src="assets/gambar/copyright.png" alt="" />
+      <span class="namaC"
+        >Copyright By Muhammad <br />
+        Fattaah Al Rasyidin</span
+      >
+      <a href="https://twitter.com/FattaahAlR?t=E0o9qkkG6hr0GttnSzOaCw&s=09"><img class="logoSosmed" src="assets/gambar/twitter.png" alt="" /></a>
+      <a href="https://www.instagram.com/muhammadfattaahal/"><img class="logoSosmed" src="assets/gambar/instagram.png" alt="" /></a>
+      <a href="https://www.facebook.com/profile.php?id=100034365468908"><img class="logoSosmed" src="assets/gambar/facebook.png" alt="" /></a>
+    </div>
+  </body>
+</html>
